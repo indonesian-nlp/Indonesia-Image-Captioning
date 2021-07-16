@@ -5,7 +5,7 @@ import torch
 import numpy as np
 from transformers import MarianTokenizer
 from flax_clip_vision_marian.modeling_clip_vision_marian import FlaxCLIPVisionMarianForConditionalGeneration
-model = FlaxCLIPVisionMarianForConditionalGeneration.from_pretrained('munggok/image-captioning-marian')
+model = FlaxCLIPVisionMarianForConditionalGeneration.from_pretrained('flax-community/Image-captioning-Indonesia')
 from torchvision.io import ImageReadMode, read_image
 marian_model_name = 'Helsinki-NLP/opus-mt-en-id'
 tokenizer = MarianTokenizer.from_pretrained(marian_model_name)
